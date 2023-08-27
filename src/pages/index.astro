@@ -65,7 +65,7 @@ const projects = (await getCollection('work'))
 						{
 							projects.map((project) => (
 								<li>
-									<PortfolioPreview project={project} transition:name="project" />
+									<PortfolioPreview project={project} transition:name={project.transition} />
 								</li>
 							))
 						}
