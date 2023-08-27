@@ -28,7 +28,7 @@ const projects = (await getCollection('work')).sort(
 				{
 					projects.map((project) => (
 						<li>
-							<PortfolioPreview project={project} />
+							<PortfolioPreview project={project} transition:name="project" />
 						</li>
 					))
 				}
